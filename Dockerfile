@@ -10,8 +10,8 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the Flask application port
-EXPOSE 5000
+# # Expose the Flask application port
+# EXPOSE 5000
 
 # Run the command to start the Flask application
 CMD ["python", "app.py"]
