@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Camera Streaming with Face Detection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    /> -->
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto py-4">
+      <h1 class="text-4xl font-bold mb-4">
+        Camera Streaming with Face Detection
+      </h1>
+      <div class="relative rounded-lg overflow-hidden">
+        <img
+          class="w-full h-auto"
+          style="max-width: 100%"
+          src="{{ url_for('video_feed') }}"
+        />
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
